@@ -1,0 +1,1153 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", verdana, sans-serif;
+}
+
+li, a, button {
+    text-decoration: none;    
+}
+
+li {
+    list-style: none;
+}
+
+.homeImgNav a {
+    color: #12372a;
+}
+
+.homeImgNav a:visited {
+    color: #12372a;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.navLogo {
+    height: 100px;
+    width: 100px;
+}
+
+.footerLogo {
+    height: 200px;
+    width: 200px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    margin: auto;
+    z-index: 2;
+}
+
+.homeImgNav {
+    display: flex;
+    align-items: center;
+}
+
+.logSign {
+    margin-right: 10px;
+}
+
+.navLinks li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.navLinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover {
+    color: #11616177;
+}
+
+/* .logSign {
+    display: none;
+} */
+
+#loginBtn {
+    border-radius: 10px;
+    padding: 5px 19px;
+    background-color: #12372a;
+    color: #FFFFFF;
+}
+
+#loginBtn:hover {
+    background-color: #43685088;
+    color: #000000;
+}
+
+.navLoginBtn:visited {
+    color: #FFFFFF;
+}
+
+#signBtn {
+    border: #00000055;
+    border-radius: 10px;
+    padding: 5px 15px;
+    background-color: #FFFFFF;
+    color: #12372a;
+}
+
+#signBtn:hover {
+    background-color: #11616177;
+    color: #FFFFFF;
+}
+
+#signBtn a:visited{
+    color: #12372a;
+}
+
+.profile {
+    display: flex;
+    margin-left: 10px;
+}
+
+.userInfo {
+    display: flex;
+    justify-content: space-evenly;
+    color: #12372a;
+}
+
+.userInfo a {
+    color: #12372a;
+}
+
+.userInfo a:visited {
+    color: #12372a;
+}
+
+#uName {
+    margin-bottom: -5px;
+}
+
+#logoutBtn {
+    border-radius: 10px;
+    padding: 5px 19px;
+    margin: 5px;
+    background-color: #12372a;
+    color: #FFFFFF;
+}
+
+#logoutBtn:hover {
+    background-color: #43685088;
+    color: #000000;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+main {
+    flex: 1;
+}
+
+.Section1 {
+    display: flex;
+    justify-content: center;   
+}
+
+.cr {
+    font-family: "Bitter", serif;
+    font-size: 40px;
+}
+
+.slogan {
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* Image Slider begin here */
+.slider {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    /* max-width: 600px; */
+    overflow: hidden;
+    z-index: -1;
+}
+
+.slides {
+    display: flex;
+    animation: slide 70s infinite;
+}
+
+.slides img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    14.28% {
+        transform: translateX(-100%);
+    }
+    28.56% {
+        transform: translateX(-200%);
+    }
+    42.84% {
+        transform: translateX(-300%);
+    }
+    57.12% {
+        transform: translateX(-400%);
+    }
+    71.4% {
+        transform: translateX(-500%);
+    }
+    85.68% {
+        transform: translateX(-600%);
+    }
+    100% {
+        transform: translateX(-600%);
+    }
+}
+/* Image Slider end here */
+
+.searchBox {
+    position: absolute;
+    width: 60%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    margin: 250px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#search {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.Search {
+    border: #12372a;
+    text-align: center;
+    color: #000000;
+}
+
+::-webkit-input-placeholder {
+    color: #000000;
+}
+
+.gpsIcon {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 7px;
+    color: #12372a;
+}
+
+#submitBtn {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #116161;
+    color: #FFFFFF;
+}
+
+#submitBtn:hover {
+    background-color: #FFFFFF;
+    color: #116161;
+}
+
+.Section2 {
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+}
+
+.sec2Heading {
+    color: #12372a;
+    font-size: 30px;
+    padding: 10px 0 0;
+}
+
+.sec2Para {
+    padding-bottom: 20px;
+}
+
+.topDestination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Destinations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 60px;
+}
+
+.cities {
+    height: 400px;
+    width: 300px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.cities:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.cities img {
+    max-width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px 10px 2px 2px;
+}
+
+footer {
+    background-color: #116161;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-link {
+    color: #FFFFFF;
+}
+
+footer .footer-link:visited {
+    color: #FFFFFF;
+}
+
+.socialLinks {
+    height: 40px;
+    width: 200px;
+    padding-right: 10px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+/* Home page end here */
+
+/* Login page begin here */
+/* body .navbar {
+    background-color: #f2f2f2;
+    position: fixed;
+    top: 0;
+} */
+
+.loginSection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundImg {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.form-box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 512px;
+    height: 570px;
+    margin-top: 100px;
+    background-color: #FFFFFF44;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    z-index: 2;
+}
+
+.login-form {
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 0.5s ease-in-out;
+}
+
+.signUp-form {
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    right: -520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 0.5s ease-in-out;
+}
+
+.top span a {
+    color: #000000;
+    font-size: large;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.top span a:hover {
+    color: #000000cc;
+    text-decoration: underline;
+}
+
+.top h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.two-forms {
+    display: flex;
+    gap: 10px;
+}
+
+.input-field {
+    height: 35px;
+    width: 100%;
+    background: #FFFFFF88;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-box {
+    margin: 2px;
+}
+
+.input-box i {
+    position: relative;
+    top: -30px;
+    left: 10px;
+}
+
+.submit {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    background-color: #12372a;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #12372add;
+}
+
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+
+.two-col .one {
+    display: flex;
+    gap: 5px;
+}
+
+.two label{
+    text-decoration: none;
+}
+
+.goBackBtn {
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+/* Login page end here */
+
+/* about us page */
+#aboutUsPage {
+    width: 100%;
+    height: 90vh;
+    margin-top: 100px;
+}
+
+.aboutUsSection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutUs {
+    width: 40%;
+    height: 100%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.para {
+    margin-top: -25px;
+}
+
+.aboutUsImg {
+    width: 500px;
+    height: 500px;
+    margin-top: 60px;
+    margin-right: 50px;
+    border-radius: 2px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contactDetails {
+    margin-left: 15px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contactDetails h3{
+    color: #12372a;
+}
+
+/* about us end here */
+
+/* about sri lanka */
+
+.aboutSriLanka {
+    width: 100%;
+    height: 900px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.aboutSriLanka h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #12372a;
+}
+
+.sriLankaSection {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paraSection {
+    width: 50%;
+    height: 90%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.map {
+    width: 500px;
+    height: 700px;
+    margin-top: 20px;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+/* user profile page */
+
+.user-profile {
+    width: 100%;
+    height: 100vh;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-profile h2 {
+    font-size: 30px;
+    color: #12372a;
+    margin-bottom: 10px;
+}
+
+.user-details {
+    width: 75%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #C4E3CB;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.names {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.name-box {
+    width: 50%;
+}
+
+.name-box h3{
+    color: #12372a;
+}
+
+.user-details-box {
+    width: 80%;
+    height: 25px;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.details {
+    margin-top: -10px;
+}
+
+.updatebtn {
+    margin: 20px;
+    width: 250px;
+    height: 50px;
+    font-size: larger;
+    font-weight: bold;
+    background-color: #12372a;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+}
+
+.updatebtn:hover {
+    background-color: #116161;
+}
+
+#reservations {
+    margin-top: 100px;
+}
+
+#reservations h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #12372a;
+    margin: 10px;
+}
+
+.reservationTable{
+    color: #12372a;
+    margin-top: 10px;
+    width: 100%;
+    height: 500px;
+}
+
+.reservationTable table {
+    width: 100%;
+    padding: 5px;
+}
+
+.reservationTable thead{
+    background-color:  #12372a;
+    color: white;
+    text-align: center;
+}
+.reservationTable tbody{
+    text-align: center;
+    color: #000000;
+}
+
+.action a{
+    text-decoration: none;
+}
+
+.action button{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.btn {
+    width: 60px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+.editBtn {
+    background-color: #116161;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteBtn {
+    background-color: #FF204E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* user update page */
+
+.update-section {
+    width: 100%;
+    height: 80vh;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-div {
+    width: 800px;
+    height: 400px;
+    background-color: #C4E3CB;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.update-form {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.update-input {
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5px;
+}
+
+.updateBtn {
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #12372a;
+    color: #FFFFFF;
+    transition: 0.3s ease;
+}
+
+.updateBtn:hover {
+    background-color: #116161;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: #12372a;
+}
+
+.BackBtn {
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #12372a;
+    color: #FFFFFF;
+}
+
+.BackBtn:hover {
+    background-color: #116161;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btnSection {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.userDeleteBtn {
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #FFFFFF;
+    transition: 0.3s ease;
+}
+
+.userDeleteBtn:hover {
+    background-color: red;
+}
+
+/* reservation change */
+
+.update-Section {
+    width: 100%;
+    height: 80vh;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-Div {
+    width: 800px;
+    height: 450px;
+    background-color: #C4E3CB;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.update-Form {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.input-div {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.update-Btn {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #12372a;
+    color: #FFFFFF;
+    font-size: large;
+}
+
+.update-Btn:hover {
+    background-color: #116161;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Message {
+    font-size: large;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.backBtn {
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #12372a;
+    color: #FFFFFF;
+}
+
+.backBtn:hover {
+    background-color: #116161;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Search Page */
+
+.searchPage {
+    width: 100%;
+}
+
+.search-bar {
+    width: 100%;
+    height: 80px;
+    background-color: #EEEEEE;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+
+}
+
+.input-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSubmit {
+    border: none;
+    border-radius: 5px;
+    background-color: #116161;
+    color: #f2f2f2;
+    padding: 2px;
+    margin: 5px;
+}
+
+.btnSubmit:hover{
+    background-color: #12372a;
+    color: #FFFFFF;
+
+}
+
+.resultSection {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-box {
+    width: 25%;
+    height: 600px;
+    background-color: #EEEEEE;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.result-box {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hotel-card .cardSection{
+    color: #12372a;
+}
+
+.hotel-card .cardSection:visited{
+    color: #12372a;
+}
+
+.hotel-card {
+    width: 90%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    padding-right: 5px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hotel-card:hover {
+    transform: scale(1.02);
+}
+
+.cardSection {
+    height: 200px;
+    width: 300px;
+    text-align: center;
+}
+
+.cardSection p{
+    color: #12372a;
+}
+
+.cardSection2 {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imageCard {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px 0 0 10px;
+
+}
+
+.price-section {
+    border-left: 1px solid #12372a;
+}
+
+.price-card {
+    margin-top: 90px;
+}
+
+
+/* Rooms page */
+
+.imageSection {
+    margin-top: 100px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotelImage{
+    width: 700px;
+    height: 400px;
+}
+
+.hoteInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.hotelDetails {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hotelName {
+    background-color: #EEEEEE;
+    height: 200px;
+}
+
+.price {
+    background-color: #EEEEEE;
+    height: 100px;
+}
+
+.facilities {
+    background-color: #EEEEEE;
+    height: 200px;
+}
+
+.contactInfo {
+    background-color: #EEEEEE;
+    height: 200px;
+}
+
+.card {
+    width: 70%;
+    text-align: center;
+    margin: 10px;
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #C4E3CB;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.formBox {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+}
+
+.inputBox {
+    padding: 5px;
+    background-color: #EEEEEE;
+    border: none;
+    border-radius: 5px;
+}
+
+.submitBtn {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 25%;
+    margin-top: 5px;
+    background-color: #12372a;
+    color: #FFFFFF;
+    transition: 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: #116161;
+    color: #FFFFFF;
+}
+

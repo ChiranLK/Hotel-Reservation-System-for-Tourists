@@ -1,0 +1,21 @@
+1 Download & Install: XAMPP in C:\xampp (default)
+2 Clone this repository in C:\xampp\htdocs
+3 Run XAMPP and start "Apache" and "MySQL"
+4 Open the link "localhost/phpmyadmin/"
+5 Click on new at sidebar and create a database name "ceylonreservedb"
+6 After clicking database click import and select the file "ceylonReserveDB.sql" in SQL folder
+7 Open the link "http://localhost/Hotel-Reservation-System-for-Tourists/"
+8 Now register and login
+
+*********************************************************************************************************************************
+
+Login credentials
+
+User:- emily.johnson@gmail.com
+pw  :- P@ssw0rd1
+
+Admin:- nuwan.perera@gmail.com
+pw   :- Perera123!
+
+Hotel Owner:- priyantha.silva@gmail.com
+pw         :- Silva@123
