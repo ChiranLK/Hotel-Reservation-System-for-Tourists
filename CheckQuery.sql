@@ -1,0 +1,32 @@
+select * from Reg_User;
+select * from Reg_User_Phone;
+select * from Admin;
+select * from Admin_Phone;
+select * from Hotel_Owner;
+select * from Hotel_Owner_Phone;
+select * from Manager;
+select * from Manager_Phone;
+select * from Hotel;
+select * from Hotel_Phone;
+select * from Rooms;
+select * from Reservation;
+select * from Payment;
+select * from Review;
+select * from Report;
+
+
+drop table Reg_User;
+drop table Reg_User_Phone;
+drop table Admin;
+drop table Admin_Phone;
+drop table Hotel_Owner;
+drop table Hotel_Owner_Phone;
+drop table Manager;
+drop table Manager_Phone;
+drop table Hotel;
+drop table Hotel_Phone;
+drop table Reservation;
+drop table Rooms;
+drop table Payment;
+drop table Review;
+drop table Report;
